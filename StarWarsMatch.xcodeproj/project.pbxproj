@@ -14,6 +14,9 @@
 		3E5454372C4B004000AF0B58 /* StarWarsMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5454362C4B004000AF0B58 /* StarWarsMatchTests.swift */; };
 		3E5454412C4B004000AF0B58 /* StarWarsMatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5454402C4B004000AF0B58 /* StarWarsMatchUITests.swift */; };
 		3E5454432C4B004000AF0B58 /* StarWarsMatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5454422C4B004000AF0B58 /* StarWarsMatchUITestsLaunchTests.swift */; };
+		3E5454512C4BB73400AF0B58 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5454502C4BB73400AF0B58 /* Card.swift */; };
+		3E5454562C4BB7C800AF0B58 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5454552C4BB7C800AF0B58 /* GameViewModel.swift */; };
+		3E5454582C4BBF1600AF0B58 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5454572C4BBF1600AF0B58 /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		3E54543C2C4B004000AF0B58 /* StarWarsMatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsMatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5454402C4B004000AF0B58 /* StarWarsMatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsMatchUITests.swift; sourceTree = "<group>"; };
 		3E5454422C4B004000AF0B58 /* StarWarsMatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsMatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3E5454502C4BB73400AF0B58 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		3E5454552C4BB7C800AF0B58 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		3E5454572C4BBF1600AF0B58 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				3E5454252C4B003F00AF0B58 /* StarWarsMatchApp.swift */,
-				3E5454272C4B003F00AF0B58 /* ContentView.swift */,
+				3E5454542C4BB75600AF0B58 /* ViewModel */,
+				3E5454532C4BB74800AF0B58 /* View */,
+				3E54544F2C4BB67400AF0B58 /* Model */,
 				3E5454292C4B004000AF0B58 /* Assets.xcassets */,
 				3E54542B2C4B004000AF0B58 /* Preview Content */,
 			);
@@ -125,6 +133,31 @@
 				3E5454422C4B004000AF0B58 /* StarWarsMatchUITestsLaunchTests.swift */,
 			);
 			path = StarWarsMatchUITests;
+			sourceTree = "<group>";
+		};
+		3E54544F2C4BB67400AF0B58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E5454502C4BB73400AF0B58 /* Card.swift */,
+				3E5454572C4BBF1600AF0B58 /* GameModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E5454532C4BB74800AF0B58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E5454272C4B003F00AF0B58 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E5454542C4BB75600AF0B58 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3E5454552C4BB7C800AF0B58 /* GameViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E5454582C4BBF1600AF0B58 /* GameModel.swift in Sources */,
+				3E5454562C4BB7C800AF0B58 /* GameViewModel.swift in Sources */,
 				3E5454282C4B003F00AF0B58 /* ContentView.swift in Sources */,
+				3E5454512C4BB73400AF0B58 /* Card.swift in Sources */,
 				3E5454262C4B003F00AF0B58 /* StarWarsMatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
